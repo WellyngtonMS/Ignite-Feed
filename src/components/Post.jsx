@@ -89,7 +89,7 @@ export function Post({ author, publishedAt, content }) {
 			<div className={styles.commentList}>
 				{comments.map((comment, index) => {
           return (
-            <Comment content={comment} key={index} onDeleteComment={deleteComment} />
+            <Comment content={comment} key={index} onDeleteComment={deleteComment} author={author} />
           )
         })}
 			</div>
